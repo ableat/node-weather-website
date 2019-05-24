@@ -10,6 +10,8 @@ const app = express()
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewspath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
+//environment variable, set by Heroku or 3000 for local
+const port = process.env.PORT || 3000
 
 //set up Handlebars engine and views location
 app.set('views', viewspath)
