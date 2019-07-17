@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark class="indigo">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -110,7 +110,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Vue Weather App'
     }
   }
 }
