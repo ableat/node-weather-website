@@ -2,7 +2,7 @@
 const request = require('request')
 
 const forecast = (latitude, longitude, cllback) => {
-    const url = 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/1023eda4d96d67a931f77985468b3f63/' + encodeURIComponent(latitude + ", " + longitude)
+    const url = 'https://api.darksky.net/forecast/1023eda4d96d67a931f77985468b3f63/' + encodeURIComponent(latitude + ", " + longitude)
     request( {url, json : true}, (error, { body }) => {
         if (error){
             cllback('Unable to connect to weather service.', undefined)
